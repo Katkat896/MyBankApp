@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.kath.mybankapp.AccountDashboard">
+  <grid id="27dc6" binding="accountDashboardPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="554" height="735"/>
+    </constraints>
+    <properties>
+      <background color="-1512966"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="35114" binding="topPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-1512966"/>
+        </properties>
+        <border type="empty"/>
+        <children>
+          <grid id="139d6" binding="balancePanel" layout-manager="FlowLayout" hgap="5" vgap="2" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+            </properties>
+            <border type="etched" title="BALANCE" title-justification="2">
+              <font size="16" style="1"/>
+              <color color="-8816263"/>
+            </border>
+            <children>
+              <component id="f6ed2" class="javax.swing.JLabel" binding="lblBalance">
+                <constraints/>
+                <properties>
+                  <font name="Segoe UI Historic" size="18" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="₱1,000.00 "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="ac031" class="javax.swing.JLabel" binding="lblWelcome">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Segoe MDL2 Assets" size="14" style="1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="&lt;html&gt;&#10;&lt;div style='text-align: center; font-family: Segoe UI, sans-serif; font-size: 14px; color: #333;'&gt;&#10;  &lt;h2 style='margin: 5px 0; font-size: 12px;'&gt;Welcome back, hero!&lt;/h2&gt;&#10;  &lt;p style='margin: 0; font-style: italic; font-size: 10px; font-weight: plain;'&gt;&#10;    &quot;Victory comes to those who plan — not those who panic.&quot;&#10;  &lt;/p&gt;&#10;  &lt;p style='margin: 5px 0; font-weight: plain;font-size: 10px'&gt;&#10;   — Spend wisely. Save smarter.&#10;  &lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;/html&gt;&#10;"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7842f" binding="navPanel" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="0">
+        <margin top="30" left="5" bottom="30" right="5"/>
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-1512966"/>
+        </properties>
+        <border type="empty">
+          <title-color color="-16777216"/>
+        </border>
+        <children>
+          <grid id="f1dda" binding="homePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="11d7b" class="javax.swing.JButton" binding="btnHome">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <icon value="main.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="dfb56" class="javax.swing.JLabel" binding="lblHome">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Main"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="dd0cc" binding="cashInPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6ce3e" class="javax.swing.JButton" binding="btnCashIn">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="cashIn.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a02bf" class="javax.swing.JLabel" binding="lblCashIn">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Cash In"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="425d5" binding="cashOutPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="14bd3" class="javax.swing.JButton" binding="btnCashOut">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <icon value="cashOut.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="d989b" class="javax.swing.JLabel" binding="lblCashOut">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Cash Out"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="bed3b" binding="transactionsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8cb08" class="javax.swing.JButton" binding="btnTransactions">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <icon value="transaction.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="7c13a" class="javax.swing.JLabel" binding="lblTransactions">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="TXN"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="fed5d" binding="settingsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="50bbd" class="javax.swing.JButton" binding="btnSettings">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <icon value="settings.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="ea9e1" class="javax.swing.JLabel" binding="lblSettings">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Settings"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="aad32" binding="logoutPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="25" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="1f14b" class="javax.swing.JButton" binding="btnLogout">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <icon value="logout.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="2f8e6" class="javax.swing.JLabel" binding="lblLogout">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Log Out"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="b2f83" binding="contentPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="f3e78">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="f3e78" binding="home" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="5" right="0"/>
+            <constraints>
+              <card name="home"/>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="da422" binding="JScrollPaneRecentTrans">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                </properties>
+                <border type="none" title="Recent Transactions" title-justification="2">
+                  <font style="1"/>
+                </border>
+                <children>
+                  <component id="c5711" class="javax.swing.JTable" binding="transactionsTable">
+                    <constraints/>
+                    <properties>
+                      <autoCreateRowSorter value="false"/>
+                      <fillsViewportHeight value="false"/>
+                      <font size="14"/>
+                      <intercellSpacing width="1" height="1"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="3a452" binding="profilePanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+                <margin top="5" left="15" bottom="10" right="15"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                </properties>
+                <border type="etched" title="PROFILE INFORMATION" title-justification="2">
+                  <font style="1"/>
+                </border>
+                <children>
+                  <component id="87834" class="javax.swing.JLabel" binding="lblProfileName">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <text value="👤 Full Name: Juan Dela Cruz"/>
+                    </properties>
+                  </component>
+                  <component id="68503" class="javax.swing.JLabel" binding="lblProfileNumber">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <text value="📱 Phone: 09XXXXXXXXX"/>
+                    </properties>
+                  </component>
+                  <component id="28c8b" class="javax.swing.JLabel" binding="lblProfileEmail">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <text value="✉️ Email: juan@gmail.com"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="62ee9">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="402d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false">
+                    <preferred-size width="-1" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="16" style="1"/>
+                  <text value="🏠 Home"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ee996" binding="cashin" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="0" bottom="50" right="0"/>
+            <constraints>
+              <card name="cashin"/>
+            </constraints>
+            <properties>
+              <background color="-1512966"/>
+              <font size="16" style="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3abf5" class="javax.swing.JTextField" binding="tfCashInAmount">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="40"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="20"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="18909" class="javax.swing.JLabel" binding="lblCashInMessage">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1226752"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <hspacer id="11fe">
+                <constraints>
+                  <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="466e4">
+                <constraints>
+                  <grid row="4" column="0" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="279c0" class="javax.swing.JButton" binding="btnCashInCancel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="CANCEL"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="13d1d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Enter amount to cash in:"/>
+                </properties>
+              </component>
+              <component id="3183e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="💰 Cash In"/>
+                </properties>
+              </component>
+              <component id="ba06c" class="javax.swing.JButton" binding="btnCashInSubmit">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="SUBMIT"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="4595d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="11"/>
+                  <foreground color="-8816263"/>
+                  <text value="Make sure the value is numeric only."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="db06b" binding="cashout" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="0" bottom="50" right="0"/>
+            <constraints>
+              <card name="cashout"/>
+            </constraints>
+            <properties>
+              <background color="-1578759"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f03d2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="💰 Cash Out"/>
+                </properties>
+              </component>
+              <component id="8c80b" class="javax.swing.JTextField" binding="tfCashOutAmount">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="40"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <font size="20"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="db2a9" class="javax.swing.JLabel" binding="lblCashOutMessage">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5aa81" class="javax.swing.JButton" binding="btnCashOutCancel">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="CANCEL"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="af074" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Enter cash out amount: "/>
+                </properties>
+              </component>
+              <component id="76e77" class="javax.swing.JButton" binding="btnCashOutSubmit">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalTextPosition value="0"/>
+                  <text value="SUBMIT"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="f8d23" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="11"/>
+                  <foreground color="-8816263"/>
+                  <text value="Make sure the value is numeric only."/>
+                </properties>
+              </component>
+              <hspacer id="c6704">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="2bffd">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="9f9bb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Recipient Mobile Number:"/>
+                </properties>
+              </component>
+              <component id="3b369" class="javax.swing.JTextField" binding="tfCashOutMobileNumber">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="40"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <font size="20"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="39ded" binding="transactions" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="0" bottom="20" right="0"/>
+            <constraints>
+              <card name="transactions"/>
+            </constraints>
+            <properties>
+              <background color="-1578759"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3caec" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="&#9;📊 Transaction History"/>
+                  <verticalAlignment value="1"/>
+                </properties>
+              </component>
+              <scrollpane id="46897">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1578759"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f4d4f" class="javax.swing.JTable" binding="transactionHistoryTable">
+                    <constraints/>
+                    <properties>
+                      <autoResizeMode value="4"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="896f8" binding="settings" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <card name="settings"/>
+            </constraints>
+            <properties>
+              <background color="-1710345"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="f717c" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="20" right="10"/>
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-1512966"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="92d87" class="javax.swing.JButton" binding="btnChangeMpin">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="40"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14" style="1"/>
+                      <text value="Change MPIN"/>
+                    </properties>
+                  </component>
+                  <component id="211b0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="16" style="1"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="⚙️ Settings"/>
+                    </properties>
+                  </component>
+                  <grid id="445a3" binding="changeMpinFormPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="20" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1644552"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="c01a0" class="javax.swing.JPasswordField" binding="pfOldMpin">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <component id="3dd24" class="javax.swing.JPasswordField" binding="pfNewMpin">
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <component id="d9355" class="javax.swing.JPasswordField" binding="pfConfirmMpin">
+                        <constraints>
+                          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="30"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <hspacer id="f70e3">
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <hspacer id="3d95a">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="6807f" class="javax.swing.JLabel" binding="lblOldMpin">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Current MPIN:"/>
+                        </properties>
+                      </component>
+                      <component id="1516e" class="javax.swing.JLabel" binding="lblNewMpin">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="New MPIN:"/>
+                        </properties>
+                      </component>
+                      <component id="afd74" class="javax.swing.JLabel" binding="lblConfirmMpin">
+                        <constraints>
+                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Confirm MPIN:"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="12035" class="javax.swing.JButton" binding="btnSaveMpin">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="SAVE"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
