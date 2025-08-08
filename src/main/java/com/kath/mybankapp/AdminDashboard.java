@@ -17,6 +17,7 @@ public class AdminDashboard extends JFrame  {
         setContentPane(mainPanel);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         pack();
+        setResizable(false);
         setLocationRelativeTo(null);
         setIconImage(new ImageIcon(Objects.requireNonNull(getClass().getResource("/wallet.png"))).getImage());
 
