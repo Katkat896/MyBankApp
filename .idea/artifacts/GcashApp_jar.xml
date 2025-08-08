@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GcashApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GcashApp_jar</output-path>
+    <root id="archive" name="GcashApp.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="GcashApp" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/formdev/flatlaf/3.4/flatlaf-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/4.28.2/protobuf-java-4.28.2.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/wallet.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/backIcon.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/banklogo.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/cashIn.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/cashOut.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/hide.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/logout.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/main.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/registerlogo.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/settings.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/transaction.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/view.png" />
+    </root>
+  </artifact>
+</component>
