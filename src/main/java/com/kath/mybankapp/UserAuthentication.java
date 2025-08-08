@@ -149,7 +149,7 @@ public class UserAuthentication {
             System.out.println("User ID not found for number: " + number);
             return;
         }
-        String insertQuery = "INSERT INTO transactions (user_id, user_number, type, amount, date) VALUES (?, ?, ?, ?, NOW())";
+        String insertQuery = "INSERT INTO `transactions` (user_id, user_number, type, amount, date) VALUES (?, ?, ?, ?, NOW())";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(insertQuery)) {
@@ -187,7 +187,7 @@ public class UserAuthentication {
             }
 
             // Insert sender and recipient transaction logs
-            String logSql = "INSERT INTO transactions (user_id, user_number, type, amount, date) VALUES (?, ?, ?, ?, NOW())";
+            String logSql = "INSERT INTO `transactions` (user_id, user_number, type, amount, date) VALUES (?, ?, ?, ?, NOW())";
             try (PreparedStatement logStmt = conn.prepareStatement(logSql)) {
                 int senderId = getUserIdByNumber(senderNumber);
                 int recipientId = getUserIdByNumber(recipientNumber);
@@ -250,7 +250,7 @@ public class UserAuthentication {
 
         try {
             Connection conn = DBConnection.getConnection();
-            String sql = "SELECT date, type, amount FROM transactions WHERE user_number = ? ORDER BY id DESC";
+            String sql = "SELECT date, type, amount FROM `transactions` WHERE user_number = ? ORDER BY id DESC";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, number);
             return stmt.executeQuery();
@@ -267,7 +267,7 @@ public class UserAuthentication {
 
         try {
             Connection conn = DBConnection.getConnection();
-            String sql = "SELECT date, type, amount FROM transactions WHERE user_number = ? ORDER BY id DESC LIMIT 5";
+            String sql = "SELECT date, type, amount FROM `transactions` WHERE user_number = ? ORDER BY id DESC LIMIT 5";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, number);
             return stmt.executeQuery();

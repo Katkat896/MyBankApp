@@ -61,12 +61,11 @@ public class AdminDashboard extends JFrame  {
     }
 
     private void loadAllTransactions() {
-        String query = """
-            SELECT t.date, u.name, t.type, t.amount 
-            FROM transactions t 
-            JOIN users u ON t.user_id = u.id 
-            ORDER BY t.date DESC
-        """;
+        String query =
+                "SELECT t.date, u.name, t.type, t.amount " +
+                "FROM `transactions` t " +
+                "JOIN `users` u ON t.user_id = u.id " +
+                "ORDER BY t.date DESC";
 
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(new String[]{"Date", "Name", "Type", "Amount"});
@@ -122,13 +121,12 @@ public class AdminDashboard extends JFrame  {
     }
 
     private void loadTransactionsForUser(String fullName) {
-        String query = """
-            SELECT t.date, t.type, t.amount 
-            FROM transactions t 
-            JOIN users u ON t.user_id = u.id 
-            WHERE u.name = ? 
-            ORDER BY t.date DESC
-        """;
+        String query =
+            "SELECT t.date, t.type, t.amount "+
+            "FROM `transactions` t "+
+            "JOIN users u ON t.user_id = u.id "+
+            "WHERE u.name = ? "+
+            "ORDER BY t.date DESC";
 
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(new String[]{"Date", "Type", "Amount"});
